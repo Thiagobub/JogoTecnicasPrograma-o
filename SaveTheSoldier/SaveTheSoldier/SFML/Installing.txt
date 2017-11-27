@@ -1,0 +1,20 @@
+
+
+Right Click on your project under Solution Explorer on the right. 
+
+Select Properties.
+
+Configuration Properties -> C/C++ -> General -> Additional Include Directories:
+C:\SFML\include
+
+Configuration Properties -> C/C++ -> Preprocessor -> Preprocessor Definitions:
+SFML_STATIC;
+
+Configuration Properties -> Linker -> General -> Additional Library Directories:
+c:\SFML\lib
+
+Configuration Properties -> Linker -> Input -> Additional Dependencies, put a ";" at the end and then:
+sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-audio-s.lib;sfml-network-s.lib;
+
+
+https://www.youtube.com/watch?v=bhrC84zp9X8
