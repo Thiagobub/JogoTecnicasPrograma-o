@@ -1,0 +1,8 @@
+games=1
+pontos=20
+games=2
+pontos=40
+games=3
+pontos=50
+games=4
+pontos=60

@@ -1,2 +1,6 @@
-﻿  SaveTheSoldier.vcxproj -> C:\Users\Thiago\Documents\GitHub\JogoTecnicasPrograma-o\SaveTheSoldier\Debug\SaveTheSoldier.exe
+﻿  Tiro.cpp
+c:\users\thiago\documents\github\jogotecnicasprograma-o\savethesoldier\savethesoldier\tiro.cpp(14): warning C4305: 'argumento': truncamento de 'double' para 'float'
+c:\users\thiago\documents\github\jogotecnicasprograma-o\savethesoldier\savethesoldier\tiro.cpp(19): warning C4305: 'argumento': truncamento de 'double' para 'float'
+c:\users\thiago\documents\github\jogotecnicasprograma-o\savethesoldier\savethesoldier\tiro.cpp(42): warning C4244: 'inicializando': conversão de 'double' para 'int', possível perda de dados
+  SaveTheSoldier.vcxproj -> C:\Users\Thiago\Documents\GitHub\JogoTecnicasPrograma-o\SaveTheSoldier\Debug\SaveTheSoldier.exe
   SaveTheSoldier.vcxproj -> C:\Users\Thiago\Documents\GitHub\JogoTecnicasPrograma-o\SaveTheSoldier\Debug\SaveTheSoldier.pdb (Partial PDB)

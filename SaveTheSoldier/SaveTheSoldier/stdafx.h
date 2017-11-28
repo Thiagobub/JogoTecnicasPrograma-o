@@ -20,8 +20,8 @@ using namespace std;
 #include <SFML/Graphics.hpp>
 using namespace sf;
 
-#define GRAVIDADE 0.058	//valor da gravidade
-#define JANELA_LARGURA	1600
-#define JANELA_ALTURA	900
+#define GRAVIDADE 0.07	//valor da gravidade
+#define JANELA_LARGURA	1280
+#define JANELA_ALTURA	720
 
 // TODO: adicionar referências de cabeçalhos adicionais que seu programa necessita

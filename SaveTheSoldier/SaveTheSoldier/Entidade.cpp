@@ -70,9 +70,9 @@ void Entidade::atualizaDirecaoSprite() { (olhando_direita) ? sprite.setScale(1, 
 void Entidade::gravidade(bool colisao)
 {
 	if (colisao)
-		atualizarPos(0, -GRAVIDADE);
+		setPosY(getPos().y - GRAVIDADE);
 	else
-		atualizarPos(0, GRAVIDADE);
+		setPosY(getPos().y + GRAVIDADE);
 }
 
 void Entidade::retornaPos() { setPos(getPosAnt().x, getPosAnt().y); }

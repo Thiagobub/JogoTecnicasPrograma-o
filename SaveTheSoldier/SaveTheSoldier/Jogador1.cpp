@@ -17,7 +17,7 @@ Jogador1::Jogador1(int x, int y)
 
 	//DEFINIR SUAS VELOCIDADES
 	setVelX(0.1);	//VELOCIDADE DE CORRIDA
-	setVelY(0.3);	//VELOCIDADE DO PULO
+	setVelY(8);	//VELOCIDADE DO PULO
 
 	//DEFINIR OS CONTROLES DESTE JOGADOR
 	setControleDireita(Keyboard::D);

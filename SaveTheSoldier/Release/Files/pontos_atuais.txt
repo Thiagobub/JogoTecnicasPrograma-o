@@ -1,0 +1,2 @@
+pontos=345
+jogadores=2

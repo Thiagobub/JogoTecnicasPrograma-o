@@ -11,12 +11,12 @@ Tiro::Tiro(float x, float y, bool direita, bool aliado)
 	if (direita)
 	{
 		setOlhandoDireita(true);
-		setVelX(0.08);
+		setVelX(0.14);
 	}
 	else
 	{
 		setOlhandoDireita(false);
-		setVelX(-0.08);
+		setVelX(-0.14);
 	}
 	setVelY(0);
 

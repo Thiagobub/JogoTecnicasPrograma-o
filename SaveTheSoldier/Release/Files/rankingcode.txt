@@ -1,0 +1,72 @@
+#pragma once
+#include "stdafx.h"
+class Ranking
+{
+private:
+	int pontos;
+	ifstream l_file;
+	ofstream s_file;
+	string line;
+	int games;		 //numero de pontuacoes salvas
+	Font font;
+	Text text;
+	vector<string>jogos;
+	
+public:
+	Ranking();
+	~Ranking();
+	void setPontos(int pontos) { this->pontos = pontos; }
+	int getPontos() { return pontos; }
+	void setgames(const int games) { this->games=games; }
+	int getGames() { return games; }
+
+	void saveRank()
+	{
+		l_file.open("Files\\ranking.txt");
+		if (l_file.is_open())
+		{
+			while (getline(l_file, line))
+			{
+				jogos.push_back(line);
+				games++;
+			}
+			line = "Jogo 0";
+			line += to_string(games);
+			line += ":	";
+			line += to_string(pontos);
+			line += " pontos";
+			jogos.push_back(line);
+		}
+
+		s_file.open("Files\\ranking.txt");
+
+
+		
+	}
+	void loadRank(RenderWindow* janela, View* camera)
+	{
+
+		l_file.open("Files\\ranking.txt");
+		janela->setSize(Vector2u(JANELA_LARGURA, JANELA_ALTURA));
+		camera->setSize(JANELA_LARGURA, JANELA_ALTURA);
+		camera->setCenter(JANELA_LARGURA / 2, JANELA_ALTURA / 2);
+		janela->setView(*camera);
+		janela->clear();
+		janela->display();
+
+		while (getline(l_file, line))
+		{
+			text.move(0, 15); //o valor eh para teste
+			text.setString(line);
+			janela->draw(text);
+			janela->display();
+		}
+		text.move(0, 45);
+		text.setCharacterSize(15);
+		text.setString("Pressione (V) para voltar...");
+		janela->draw(text);
+		janela->display();
+		return;
+	}
+};
+
